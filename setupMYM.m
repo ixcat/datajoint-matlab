@@ -70,7 +70,6 @@ function mymVersion = setupMYM(version, force)
     fprintf('Setting up mym...\n');
     run(fullfile(mymdir, 'mymSetup.m'));
 
-    mymVersion = version;
-    INSTALLED_VERSION = mymVersion;
+    mymVersion = mym('version');
 
 end 
